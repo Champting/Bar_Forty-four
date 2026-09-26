@@ -1,0 +1,57 @@
+:root {
+  --wood: #1e1511;
+  --wood-soft: #2b1b16;
+  --wine: #512b26;
+  --paper: #dfcba5;
+  --paper-soft: #bca985;
+  --gold: #b89358;
+  --line: rgba(184, 147, 88, .38);
+  --shadow: rgba(0, 0, 0, .55);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(81, 43, 38, .25), transparent 38rem), var(--wood);
+  color: var(--paper);
+  font-family: "Noto Serif TC", "PMingLiU", "MingLiU", serif;
+}
+.page-shell { width: min(1120px, 100%); margin: 0 auto; background: var(--wood-soft); box-shadow: 0 0 60px var(--shadow); min-height: 100vh; }
+.hero { position: relative; height: clamp(320px, 55vw, 620px); overflow: hidden; border-bottom: 1px solid var(--line); }
+.hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 44%; filter: brightness(.72) saturate(.82); }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,10,7,.6), rgba(17,10,7,.12) 48%, rgba(17,10,7,.4)), linear-gradient(0deg, rgba(30,21,17,.92), transparent 46%); }
+.brand { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; text-shadow: 0 3px 20px #000; transform: translateY(2%); }
+.brand-small { font-size: clamp(1rem, 2vw, 1.45rem); letter-spacing: .65em; margin-right: -.65em; }
+.brand-number { font-family: Georgia, "Times New Roman", serif; font-size: clamp(5rem, 15vw, 10rem); line-height: .9; font-weight: 400; letter-spacing: .03em; }
+.brand-rule { width: 8rem; height: 1px; margin: 1.5rem 0 1.2rem; background: var(--gold); }
+.brand-sub { font-family: Georgia, "Times New Roman", serif; font-size: .72rem; letter-spacing: .28em; }
+.menu-section { padding: clamp(3rem, 7vw, 6rem) clamp(1.25rem, 6vw, 5.5rem) 2.5rem; background: linear-gradient(rgba(43,27,22,.97), rgba(30,21,17,.98)), repeating-linear-gradient(90deg, transparent 0 32px, rgba(255,255,255,.015) 33px 34px); }
+.section-heading { text-align: center; }
+.section-heading > span { color: var(--gold); font-size: .72rem; letter-spacing: .4em; }
+.section-heading h1 { margin: .6rem 0 .35rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; letter-spacing: .12em; }
+.section-heading p { margin: 0; color: var(--paper-soft); font-size: .95rem; letter-spacing: .15em; }
+.menu-block { margin: 4rem auto 0; max-width: 900px; }
+.menu-block h2 { margin: 0 0 .9rem; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: 1rem; font-weight: 400; letter-spacing: .32em; }
+.drink-list { border-top: 1px solid var(--gold); }
+.drink-item { display: grid; grid-template-columns: 210px 1fr; gap: 1.7rem; padding: 1.5rem .25rem; border-bottom: 1px solid var(--line); align-items: center; }
+.drink-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid var(--line); filter: saturate(.9) brightness(.92); }
+.drink-copy { min-width: 0; }
+.drink-title-line { display: flex; align-items: baseline; gap: 1rem; justify-content: space-between; }
+.drink-copy h3 { margin: 0; font-size: 1.25rem; font-weight: 400; letter-spacing: .08em; }
+.drink-copy p { margin: .8rem 0 0; color: var(--paper-soft); line-height: 1.9; letter-spacing: .04em; }
+.price { color: var(--gold); font-family: Georgia, "Times New Roman", serif; white-space: nowrap; }
+.location { max-width: 900px; margin: 4.5rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--line); text-align: center; }
+.location > span { color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: .72rem; letter-spacing: .32em; }
+.location p { margin: .55rem 0 0; color: var(--paper-soft); line-height: 1.9; letter-spacing: .08em; }
+.location .world { margin-top: 1rem; color: var(--paper); font-size: 1.08rem; letter-spacing: .18em; }
+footer { max-width: 900px; margin: 5rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; color: var(--paper-soft); font-family: Georgia, "Times New Roman", serif; font-size: .68rem; letter-spacing: .25em; }
+.footer-mark { color: var(--gold); font-size: 1.6rem; letter-spacing: .08em; }
+@media (max-width: 640px) {
+  .hero { height: 420px; }
+  .hero img { object-position: 47% center; }
+  .menu-section { padding-inline: 1.15rem; }
+  .menu-block { margin-top: 3rem; }
+  .drink-item { grid-template-columns: 1fr; gap: 1rem; padding: 1.35rem .15rem 1.6rem; }
+  .drink-photo { aspect-ratio: 16 / 10; }
+  .drink-copy h3 { font-size: 1.15rem; }
+}
