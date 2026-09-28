@@ -29,7 +29,10 @@ body {
 .section-heading { text-align: center; }
 .section-heading > span { color: var(--gold); font-size: .72rem; letter-spacing: .4em; }
 .section-heading h1 { margin: .6rem 0 .35rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; letter-spacing: .12em; }
-.section-heading p { margin: 0; color: var(--paper-soft); font-size: .95rem; letter-spacing: .15em; }
+.bar-intro { max-width: 900px; margin: 1.6rem auto 0; text-align: center; }
+.bar-intro p { margin: 0; line-height: 1.9; text-wrap: balance; }
+.bar-intro-title { color: var(--paper); font-size: 1rem; letter-spacing: .12em; }
+.bar-intro .bar-intro-message { margin-top: .45rem; color: var(--paper-soft); font-size: .9rem; letter-spacing: .06em; }
 .menu-block { margin: 4rem auto 0; max-width: 900px; }
 .menu-block h2 { margin: 0 0 .9rem; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: 1rem; font-weight: 400; letter-spacing: .32em; }
 .drink-list { border-top: 1px solid var(--gold); }
@@ -40,14 +43,14 @@ body {
 .drink-copy h3 { margin: 0; font-size: 1.25rem; font-weight: 400; letter-spacing: .08em; }
 .drink-copy p { margin: .8rem 0 0; color: var(--paper-soft); line-height: 1.9; letter-spacing: .04em; }
 .price { color: var(--gold); font-family: Georgia, "Times New Roman", serif; white-space: nowrap; }
-.notice-section { max-width: 900px; margin: 4.5rem auto 0; padding: 2rem clamp(1.25rem, 4vw, 3rem) 2.2rem; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--line); background: rgba(17, 10, 7, .22); }
+.notice-section { max-width: 900px; margin: clamp(2.5rem, 5vw, 3.5rem) auto 0; padding: 2rem clamp(1.25rem, 4vw, 3rem) 2.2rem; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--line); background: rgba(17, 10, 7, .22); }
 .notice-heading { text-align: center; margin-bottom: 1.6rem; }
 .notice-heading > span { color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: .72rem; letter-spacing: .32em; }
 .notice-heading h2 { margin: .55rem 0 0; font-size: 1.35rem; font-weight: 400; letter-spacing: .16em; }
-.notice-copy { max-width: 700px; margin: 0 auto; color: var(--paper-soft); line-height: 1.9; letter-spacing: .05em; }
-.notice-copy p { margin: .7rem 0; }
+.notice-copy { max-width: 700px; margin: 0 auto; padding-left: 1.1rem; list-style-type: disc; color: var(--paper-soft); line-height: 1.9; letter-spacing: .05em; }
+.notice-copy li { margin: .7rem 0; padding-left: .3rem; }
+.notice-copy li::marker { color: #987744; font-size: .7em; }
 .notice-copy strong { color: var(--paper); font-weight: 400; }
-.notice-note { margin-top: 1.35rem !important; padding-top: 1.15rem; border-top: 1px solid var(--line); color: var(--paper); text-align: center; }
 .location { max-width: 900px; margin: 4.5rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--line); text-align: center; }
 .location > span { color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: .72rem; letter-spacing: .32em; }
 .location p { margin: .55rem 0 0; color: var(--paper-soft); line-height: 1.9; letter-spacing: .08em; }
