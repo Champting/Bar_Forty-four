@@ -31,7 +31,12 @@
         <p class="bar-intro-message">適合獨自前來，或三五好友小聚</p>
       </div>
 
-      <div class="menu-block">
+      <div class="menu-tabs" role="tablist" aria-label="MENU 分頁" hidden>
+        <button id="drinks-tab" type="button" role="tab" aria-controls="drinks-panel" aria-selected="true">酒單<span>DRINKS</span></button>
+        <button id="photographer-tab" type="button" role="tab" aria-controls="photographer-panel" aria-selected="false" tabindex="-1">合作攝影師<span>PHOTOGRAPHER</span></button>
+      </div>
+
+      <div class="menu-block" id="drinks-panel" role="tabpanel" aria-labelledby="drinks-tab">
         <h2>DRINKS</h2>
         <div class="drink-list">
           <article class="drink-item">
@@ -91,6 +96,24 @@
         </div>
       </div>
       
+      <section class="photographer-panel" id="photographer-panel" role="tabpanel" aria-labelledby="photographer-tab">
+        <h2>PARTNER PHOTOGRAPHER</h2>
+        <article class="photographer-profile">
+          <img class="photographer-photo" src="images/iara.png" alt="合作攝影師 Iara 的角色肖像" loading="lazy" decoding="async" width="576" height="1024">
+          <div class="photographer-copy">
+            <span class="photographer-label">合作攝影師</span>
+            <h3>Iara</h3>
+            <p>營業時可在店內找 Iara 洽詢拍攝，拍攝地點不限店內。</p>
+            <div class="photographer-fee">
+              <h4>拍立得繪簽</h4>
+              <p>250,000 Gil／張</p>
+            </div>
+            <p class="photographer-detail">拍攝地點、內容與費用由雙方約定，BAR 44 協助牽線。</p>
+            <a class="photographer-link" href="https://www.threads.com/@cutepenny1209" target="_blank" rel="noopener noreferrer">查看 Iara 的 Threads <span aria-hidden="true">↗</span><span class="visually-hidden">（另開分頁）</span></a>
+          </div>
+        </article>
+      </section>
+
       <section class="notice-section" aria-labelledby="notice-title">
         <div class="notice-heading">
           <span>NOTICE</span>
@@ -120,5 +143,6 @@
       </footer>
     </section>
   </main>
+  <script src="menu.js"></script>
 </body>
 </html>
