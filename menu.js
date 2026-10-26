@@ -27,3 +27,31 @@ tabs.forEach((tab, index) => {
 
 selectTab(tabs[0]);
 menuTabs.hidden = false;
+
+const lightbox = document.querySelector('.gallery-lightbox');
+const fullImage = lightbox.querySelector('.gallery-full-image');
+let galleryOpener;
+
+document.querySelectorAll('.gallery-item').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    if (typeof lightbox.showModal !== 'function' || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    galleryOpener = link;
+    fullImage.src = link.href;
+    fullImage.alt = link.querySelector('img').alt;
+    lightbox.showModal();
+    document.body.classList.add('gallery-open');
+  });
+});
+
+lightbox.addEventListener('click', (event) => {
+  if (event.target !== lightbox) return;
+  const bounds = lightbox.getBoundingClientRect();
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) lightbox.close();
+});
+
+lightbox.addEventListener('close', () => {
+  document.body.classList.remove('gallery-open');
+  fullImage.removeAttribute('src');
+  galleryOpener?.focus();
+});
