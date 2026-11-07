@@ -1,5 +1,5 @@
 const menuTabs = document.querySelector('.menu-tabs');
-const tabs = Array.from(menuTabs.querySelectorAll('[role="tab"]'));
+const tabs = Array.from(menuTabs.querySelectorAll('[role="tab"]:not([hidden])'));
 
 function selectTab(tab) {
   tabs.forEach((item) => {
