@@ -75,7 +75,7 @@ footer { max-width: 900px; margin: 5rem auto 0; padding-top: 1.5rem; border-top:
 .photographer-copy h3 { margin: .65rem 0 1.2rem; font-family: Georgia, serif; font-size: 2.7rem; font-weight: 400; letter-spacing: .06em; }
 .photographer-copy p { color: var(--paper-soft); line-height: 1.9; }
 .owner-photo-frame { aspect-ratio: 3 / 4; overflow: hidden; border: 1px solid var(--line); }
-.owner-photo { display: block; width: 104%; max-width: none; height: 100%; margin-left: -4%; object-fit: cover; object-position: center top; }
+.owner-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .owner-copy h3 { font-family: inherit; font-size: clamp(1.7rem, 4vw, 2.4rem); }
 .photographer-fee { margin: 1.5rem 0; padding: 1.2rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .photographer-fee h4 { margin: 0 0 .65rem; color: var(--paper-soft); font-size: .85rem; font-weight: 400; }
