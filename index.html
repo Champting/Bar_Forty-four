@@ -32,8 +32,7 @@
 
       <div class="menu-tabs" role="tablist" aria-label="MENU 分頁" hidden>
         <button id="drinks-tab" type="button" role="tab" aria-controls="drinks-panel" aria-selected="true">酒單<span>DRINKS</span></button>
-        <button id="owner-tab" type="button" role="tab" aria-controls="owner-panel" aria-selected="false" tabindex="-1">關於老闆<span>OWNER</span></button>
-        <button id="photographer-tab" type="button" role="tab" aria-controls="photographer-panel" aria-selected="false" tabindex="-1">駐店攝影師<span>PHOTOGRAPHER</span></button>
+        <button id="about-tab" type="button" role="tab" aria-controls="about-panel" aria-selected="false" tabindex="-1">關於我們<span>ABOUT US</span></button>
       </div>
 
       <div class="menu-block" id="drinks-panel" role="tabpanel" aria-labelledby="drinks-tab">
@@ -96,51 +95,52 @@
         </div>
       </div>
       
-      <section class="photographer-panel owner-panel" id="owner-panel" role="tabpanel" aria-labelledby="owner-tab">
-        <h2>ABOUT THE OWNER</h2>
-        <article class="photographer-profile">
-          <div class="owner-photo-frame">
-            <img class="owner-photo" src="images/owner-alania-soft-light.webp" alt="酒吧老闆艾拉尼亞戴著眼鏡，在酒櫃前手持調酒器調酒" loading="lazy" decoding="async" width="1086" height="1448">
-          </div>
-          <div class="photographer-copy owner-copy">
-            <span class="photographer-label">酒吧老闆</span>
-            <h3>艾拉尼亞</h3>
-            <p>出身海都的人族，曾做為美食獵人的身分四處冒險，尋訪各地的料理與食材。旅途的最後，她決定落腳伊修加爾德，開起了 BAR 44，將一路嚐過的滋味與故事帶進這間小酒館。</p>
-            <p>如今一個人打理著店裡的大小事，平時沉穩從容，偶爾也會有些迷糊，得在吧台後找一找剛放下的東西。</p>
-          </div>
-        </article>
-      </section>
-
-      <section class="photographer-panel" id="photographer-panel" role="tabpanel" aria-labelledby="photographer-tab">
-        <h2>PARTNER PHOTOGRAPHER</h2>
-        <article class="photographer-profile">
-          <img class="photographer-photo" src="images/iara.webp" alt="駐店攝影師 Iara 的角色肖像" loading="lazy" decoding="async" width="576" height="1024">
-          <div class="photographer-copy">
-            <span class="photographer-label">駐店攝影師</span>
-            <h3>Iara</h3>
-            <p>營業時可在店內找 Iara 洽詢拍攝，拍攝地點不限店內。</p>
-            <div class="photographer-fee">
-              <h4>拍立得繪簽</h4>
-              <p>250,000 Gil／張</p>
+      <div id="about-panel" role="tabpanel" aria-labelledby="about-tab">
+        <section class="photographer-panel owner-panel" aria-labelledby="owner-title">
+          <h2 id="owner-title">店主</h2>
+          <article class="photographer-profile">
+            <div class="owner-photo-frame">
+              <img class="owner-photo" src="images/owner-alania-soft-light.webp" alt="酒吧老闆艾拉尼亞戴著眼鏡，在酒櫃前手持調酒器調酒" loading="lazy" decoding="async" width="1086" height="1448">
             </div>
-            <p class="photographer-detail">拍攝地點、內容與費用由雙方約定，BAR 44 協助牽線。</p>
-            <a class="photographer-link" href="https://7gzw8jvk8j-pixel.github.io/iara-polaroid/" target="_blank" rel="noopener noreferrer">拍攝服務說明 <span aria-hidden="true">↗</span><span class="visually-hidden">（另開分頁）</span></a>
-            <a class="photographer-link" href="https://www.threads.com/@cutepenny1209" target="_blank" rel="noopener noreferrer">查看 Iara 的 Threads <span aria-hidden="true">↗</span><span class="visually-hidden">（另開分頁）</span></a>
-          </div>
-        </article>
-        <section class="photographer-gallery" aria-labelledby="gallery-title">
-          <h3 id="gallery-title">作品展示</h3>
-          <p>拍立得繪簽成品 · 點圖放大</p>
-          <div class="gallery-grid">
-            <a class="gallery-item" href="images/iara-work-01.webp" aria-label="放大作品：雙人合照繪簽">
-              <img src="images/iara-work-01.webp" alt="Iara 的雙人合照拍立得繪簽，搭配暖色花朵與手繪裝飾" loading="lazy" decoding="async">
-            </a>
-            <a class="gallery-item" href="images/iara-work-02.webp" aria-label="放大作品：三人合照繪簽">
-              <img src="images/iara-work-02.webp" alt="Iara 的三人合照拍立得繪簽，搭配藍紫色花朵與手寫文字" loading="lazy" decoding="async">
-            </a>
-          </div>
+            <div class="photographer-copy owner-copy">
+              <h3>艾拉尼亞</h3>
+              <p>出身海都的人族，曾做為美食獵人的身分四處冒險，尋訪各地的料理與食材。旅途的最後，她決定落腳伊修加爾德，開起了 BAR 44，將一路嚐過的滋味與故事帶進這間小酒館。</p>
+              <p>如今一個人打理著店裡的大小事，平時沉穩從容，偶爾也會有些迷糊，得在吧台後找一找剛放下的東西。</p>
+            </div>
+          </article>
         </section>
-      </section>
+
+        <section class="photographer-panel" aria-labelledby="photographer-title">
+          <h2 id="photographer-title">駐店攝影師</h2>
+          <article class="photographer-profile">
+            <img class="photographer-photo" src="images/iara.webp" alt="駐店攝影師 Iara 的角色肖像" loading="lazy" decoding="async" width="576" height="1024">
+            <div class="photographer-copy">
+              <h3>Iara</h3>
+              <p>營業時可在店內找 Iara 洽詢拍攝，拍攝地點不限店內。</p>
+              <div class="photographer-fee">
+                <h4>拍立得繪簽</h4>
+                <p>250,000 Gil／張</p>
+              </div>
+              <p class="photographer-detail">拍攝地點、內容與費用由雙方約定，BAR 44 協助牽線。</p>
+              <a class="photographer-link" href="https://7gzw8jvk8j-pixel.github.io/iara-polaroid/" target="_blank" rel="noopener noreferrer">拍攝服務說明 <span aria-hidden="true">↗</span><span class="visually-hidden">（另開分頁）</span></a>
+              <a class="photographer-link" href="https://www.threads.com/@cutepenny1209" target="_blank" rel="noopener noreferrer">查看 Iara 的 Threads <span aria-hidden="true">↗</span><span class="visually-hidden">（另開分頁）</span></a>
+            </div>
+          </article>
+          <section class="photographer-gallery" aria-labelledby="gallery-title">
+            <h3 id="gallery-title">作品展示</h3>
+            <p>拍立得繪簽成品 · 點圖放大</p>
+            <div class="gallery-grid">
+              <a class="gallery-item" href="images/iara-work-01.webp" aria-label="放大作品：雙人合照繪簽">
+                <img src="images/iara-work-01.webp" alt="Iara 的雙人合照拍立得繪簽，搭配暖色花朵與手繪裝飾" loading="lazy" decoding="async">
+              </a>
+              <a class="gallery-item" href="images/iara-work-02.webp" aria-label="放大作品：三人合照繪簽">
+                <img src="images/iara-work-02.webp" alt="Iara 的三人合照拍立得繪簽，搭配藍紫色花朵與手寫文字" loading="lazy" decoding="async">
+              </a>
+            </div>
+          </section>
+        </section>
+
+      </div>
 
       <section class="notice-section" aria-labelledby="notice-title">
         <div class="notice-heading">

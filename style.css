@@ -67,11 +67,11 @@ footer { max-width: 900px; margin: 5rem auto 0; padding-top: 1.5rem; border-top:
 .menu-tabs button:focus-visible, .photographer-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
 .menu-tabs:not([hidden]) + .menu-block { margin-top: 2rem; }
 .photographer-panel { max-width: 900px; margin: 2rem auto 0; }
+.photographer-panel + .photographer-panel { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .photographer-panel > h2 { color: var(--gold); font-family: Georgia, serif; font-size: .9rem; font-weight: 400; letter-spacing: .22em; }
 .photographer-profile { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); padding-top: 1.5rem; border-top: 1px solid var(--gold); align-items: center; }
 .photographer-photo { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
 .photographer-copy { min-width: 0; }
-.photographer-label { color: var(--gold); font-size: .8rem; letter-spacing: .15em; }
 .photographer-copy h3 { margin: .65rem 0 1.2rem; font-family: Georgia, serif; font-size: 2.7rem; font-weight: 400; letter-spacing: .06em; }
 .photographer-copy p { color: var(--paper-soft); line-height: 1.9; }
 .owner-photo-frame { aspect-ratio: 3 / 4; overflow: hidden; border: 1px solid var(--line); }
